@@ -9,7 +9,7 @@ public class BookingModel {
 	private LocalDate checkOut;
 	private int numberGuests;
 
-	public BookingModel(String id, String reservename, LocalDate checkIn, LocalDate checkOut, int numberGuests) {
+	public BookingModel(String id, String reservename, LocalDate checkIn, LocalDate checkOut, Integer numberGuests) {
 		super();
 		this.id = id;
 		this.reservename = reservename;
@@ -50,7 +50,7 @@ public class BookingModel {
 		this.checkOut = checkOut;
 	}
 
-	public int getNumberGuests() {
+	public Integer getNumberGuests() {
 		return numberGuests;
 	}
 

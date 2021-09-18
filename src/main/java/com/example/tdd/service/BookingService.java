@@ -19,8 +19,8 @@ public class BookingService {
 
 		Optional<BookingModel> bookingModelOptional = bookingRepository.findByReserveName(name);
 
-		return Period.between(bookingModelOptional.get().getCheckIn(), bookingModelOptional.get().getCheckOut())
-				.getDays();
+		return Period.between(bookingModelOptional.get().getCheckIn(), 
+				              bookingModelOptional.get().getCheckOut()).getDays();
 	}
 
 }
